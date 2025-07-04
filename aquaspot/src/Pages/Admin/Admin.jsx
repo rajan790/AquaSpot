@@ -3,7 +3,7 @@ import styles from './Admin.module.css'
 import Navbar from '../../Components/users/Navbar/Navbar'
 import Dashboard from '../../Components/Admin/Dashboard';
 import ManageSpot from '../../Components/Admin/ManageSpot';
-import AddSpot from '../../components/Admin/AddSpot';
+import AddSpot from '../../Components/Admin/AddSpot';
 const Admin = () => {
   const [toggle, setToggle] = useState("Dashboard");
   const renderPage = () => {
