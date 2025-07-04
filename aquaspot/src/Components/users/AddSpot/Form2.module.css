@@ -1,0 +1,41 @@
+
+.boxes
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box{
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;cursor: pointer;
+}
+.box:hover
+{
+   transform: scale(1.05);
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button
+{
+    margin-top: 20px;
+    padding: 15px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+.active
+{
+    background-color: #306ad6;
+    color: white;
+}

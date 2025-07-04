@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html,#root
+{
+    min-height:100%;
+    background-image: linear-gradient(to right, #2563EB, #41B8D0) !important ;
+}
+textarea, input, button {
+  font-family: 'Inter', sans-serif;
+}
+.adminContainer
+{
+   width: 100%;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}

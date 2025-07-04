@@ -1,0 +1,135 @@
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.required {
+  color: red;
+}
+
+.dropdownContainer {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.selectBox {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  appearance: none;
+}
+
+.timeInputs {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.timeBox {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.dropZone {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.dropContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.fileLabel {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.cameraIcon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.previewList {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+  font-size: 14px;
+  color: #444;
+}
+.previewImage {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.previewImage img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.previewGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.previewImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button
+{
+    margin-top: 20px;
+    padding: 15px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+.active
+{
+    background-color: #306ad6;
+    color: white;
+}

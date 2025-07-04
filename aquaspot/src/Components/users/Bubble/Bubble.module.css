@@ -1,0 +1,51 @@
+
+.bubble
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 50%;
+    
+}
+.move1
+{
+  animation: move1 10s infinite alternate-reverse;
+}
+.move2
+{
+  animation: move2 8.5s infinite alternate-reverse;
+}
+.move3
+{
+  animation: move3 7s infinite alternate-reverse;
+}
+@keyframes move1 {
+  0%   { transform: translate(0px, 0px); }
+  20%  { transform: translate(5px, -10px); }
+  40%  { transform: translate(10px, 0px); }
+  60%  { transform: translate(5px, 10px); }
+  80%  { transform: translate(-5px, 5px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes move2 {
+  0%   { transform: translate(0px, 0px); }
+  15%  { transform: translate(8px, -5px); }
+  30%  { transform: translate(12px, 0px); }
+  45%  { transform: translate(8px, 5px); }
+  60%  { transform: translate(0px, 8px); }
+  75%  { transform: translate(-8px, 5px); }
+  90%  { transform: translate(-12px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+
+@keyframes move3 {
+  0%   { transform: translate(0px, 0px); }
+  20%  { transform: translate(-10px, -10px); }
+  40%  { transform: translate(-20px, 0px); }
+  60%  { transform: translate(-10px, 10px); }
+  80%  { transform: translate(0px, 5px); }
+  100% { transform: translate(0px, 0px); }
+}

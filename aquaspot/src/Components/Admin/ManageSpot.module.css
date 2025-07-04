@@ -1,0 +1,198 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 35px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Individual card or section container */
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1; 
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 49%;
+  min-width: 400px;
+  background-color: white;
+  border-radius: 30px;
+  align-self: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  gap: 10px;
+  transition: all 0.1s ease;
+}
+.outerContainer:hover
+{
+  .circle1
+  {
+    animation: none;
+  }
+  .circle2
+  {
+    animation: rotate 3s infinite;
+    width: 30px;
+    height: 50px;
+    border-radius: 15px;
+  }
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.animationContainer
+{
+  position: relative;
+  width: 100%;
+  height: 170px;
+
+      background-image: linear-gradient(to left, #2563EB, #41B8D0) !important ;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoIcon
+{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 50%;
+  width: 25px;
+  cursor: pointer;
+}
+.circle1
+{
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: circle 0.5s infinite alternate;
+     transition: all 0.7s ease;
+}
+.circle2
+{
+    width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 50%;
+     transition: all 0.7s ease;
+}
+
+.spotName
+{
+  align-self: center;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.dataLine
+{
+  margin-left: 10px;
+  color: rgb(97, 97, 97);
+  font-size: 18px;
+  font-weight: bold;
+}
+.btnContainer
+{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.approveBtn,.rejectBtn
+{
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.approveBtn
+{
+    background: linear-gradient(135deg, #4df777 0%, #30c799 100%);
+}
+.rejectBtn
+{
+  width: 50%;
+      background: linear-gradient(135deg, #eb606b 40%, #DC3644 100%);
+  
+}
+@keyframes circle {
+  0%
+  {
+    transform: scale(1);
+  }
+  100%
+  {
+    transform: scale(1.1);
+  }
+  
+}
+@keyframes rotate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(360deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+  
+  
+}
+@media (max-width: 1428px) {
+.container
+{
+  justify-content: center;
+}
+.outerContainer
+{
+  max-width: 80%;
+  min-width: 0%;
+}
+}
+
+
+@keyframes shimmer {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.684);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.686);
+  }
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 49%;
+  min-width: 400px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  align-self: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  gap: 10px;
+  transition: all 0.1s ease;
+
+  /* ✨ Sparkling effect */
+  animation: shimmer 1s infinite ease-in-out;
+}

@@ -1,0 +1,30 @@
+.addSpotPage {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.afterNav {
+  padding: 65px 30px;
+  display: flex;
+  min-width: 400px;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.head2 {
+  color: white;
+  margin-top: 10px;
+}
